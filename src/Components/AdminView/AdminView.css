@@ -1,0 +1,76 @@
+.admin-view-container-unique {
+  margin: 20px;
+}
+
+.form-input-unique {
+  border: 2px solid black !important;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.submit-btn-unique {
+  border: 2px solid black !important;
+  background-color: transparent !important;
+  color: black !important;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn-unique:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+.blog-grid-unique {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: stretch;
+}
+
+.blog-card-unique {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.blog-card-unique:hover {
+  transform: scale(1.05);
+}
+
+/* New Button Classes */
+.button-unique {
+  margin: 10px 5px !important;
+  border: 2px solid black !important;
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.button-unique:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.modal-footer .button-unique {
+  margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+  .blog-grid-unique {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-grid-unique {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,46 @@
+.custom-navbar {
+  background-color: black;  /* Set navbar background to black */
+}
+
+.custom-logo {
+  width: 100px; 
+  height: 50px; 
+  background-image: url('../../images/logow.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-nav-links .custom-nav-link {
+  color: #fff;  /* Ensure the nav links remain white */
+  font-weight: 500;
+}
+
+.custom-nav-links .custom-nav-link:hover {
+  color: #f1f1f1; /* Lighten color on hover */
+  animation: shake 0.5s ease-in-out;
+}
+
+.custom-nav-links .custom-nav-link:active {
+  color: #ccc;  /* Slightly darker on active state */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .custom-nav-links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-nav-links .custom-nav-link {
+    font-size: 14px;
+  }
+}

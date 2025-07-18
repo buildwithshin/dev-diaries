@@ -1,0 +1,88 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  background-image: url('../../images/landing.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Unique button class for the Home page */
+.home-unique-button {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 2px solid white !important;
+  color: white !important;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.home-unique-button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+
+/* Footer Styling */
+.home-footer {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+
+/* Mobile Adaptation */
+@media (max-width: 767px) {
+  .home {
+    background-image: url('../../images/mobile.png');
+  }
+
+  .home-title {
+    font-size: 36px;
+  }
+
+  .home-subtitle {
+    font-size: 18px;
+  }
+
+  .home-unique-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
